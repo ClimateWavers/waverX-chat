@@ -65,4 +65,4 @@ This project is shared under the [MIT License](#).
 
 ## Contact Information
 
-For support or queries, reach out to me on masterjoetech@gamil.com
+For support or queries, reach out to me on climatewaver@gmail.com
