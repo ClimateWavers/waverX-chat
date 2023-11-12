@@ -90,7 +90,7 @@ async function chatBot(latestReceivedMessage) {
 
     // Check if the message is a greeting
     if (isGreeting(message)) {
-      const welcomeMessage = "Hello, I am WeaverX, feel free to ask me any questions related to climate and disaster, Let's protect our planet!";
+      const welcomeMessage = "Hello, I am WaverX, feel free to ask me any questions related to climate and disaster, Let's protect our planet!";
       const newMessage = new Message({
         userId,
         message,
