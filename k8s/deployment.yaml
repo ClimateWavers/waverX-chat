@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: chatbot
+    app.kubernetes.io/component: chatbot
+    app.kubernetes.io/instance: chatbot
+    app.kubernetes.io/name: chatbot
+    app.kubernetes.io/part-of: bots
+    app.openshift.io/runtime-namespace: climatewavers-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatbot
+  template:
+    metadata:
+      labels:
+        app: chatbot
+        deployment: chatbot
+    spec:
+      containers:
+        - image: quay.io/olagoldhacxx/chatbot:v1
+          imagePullPolicy: Always
+          name: chatbot
+          ports:
+            - containerPort: 3000
+              protocol: TCP
